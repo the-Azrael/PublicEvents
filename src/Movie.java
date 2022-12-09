@@ -1,5 +1,6 @@
 public class Movie extends Event {
-    public Movie() {
+    public Movie(String title) {
+        this(title, 0, 0);
     }
 
     public Movie(String title, int releaseYear, int age) {

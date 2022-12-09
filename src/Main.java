@@ -13,7 +13,7 @@ public class Main {
         return new Movie[] {
                 new Movie("Начало", 2010, 16),
                 new Movie("Матрица", 1999, 16),
-                new Movie()
+                new Movie("АААА")
         };
     }
 
@@ -26,7 +26,7 @@ public class Main {
 
     public static void validEvent(Event event) {
         if (event.getTitle() == null || event.getAge() == 0 || event.getReleaseYear() == 0) {
-            throw new RuntimeException();
+            throw new NotValidEventException();
         }
     }
 
